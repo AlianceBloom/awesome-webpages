@@ -38,7 +38,7 @@ section {
     margin-left: 10px;
     font-size: 25px;
     display: inline-block; }
-    .personal-information .contacts li:first-child {
+    .personal-information .contacts li:first-child, .personal-information .contacts li:last-child {
       display: block; }
 
 .additional-information h1 {

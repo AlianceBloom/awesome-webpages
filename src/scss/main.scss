@@ -32,7 +32,7 @@ section {
     text-align: center;
     margin-left: -10px;
     li {
-      &:first-child {
+      &:first-child, &:last-child {
         display: block;
       }
       margin-left: 10px;
