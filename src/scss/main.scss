@@ -1,1 +1,82 @@
-h1 { font-size: 22px; }
+html, body { width: 100%; height: 100%; }
+body, .footer { background-color: #2C3E50; }
+
+$white: white;
+section.container {
+  min-height: 100%;
+  margin-bottom: -20px;
+}
+.footer {
+  height: 25px;
+}
+h1 { text-align: center; color: $white; }
+
+section {
+  padding-top: 20px;
+}
+
+.personal-information {
+  .heading {
+    .avatar {
+      width: 200px; height: auto;
+      border: 3px solid $white;
+      border-radius: 50%;
+      margin: 0 auto 0 auto;
+      display: block;
+    }
+    h1 { font-size: 25px; }
+  }
+  .contacts {
+    display: block;
+    text-align: center;
+    margin-left: -10px;
+    li {
+      &:first-child {
+        display: block;
+      }
+      margin-left: 10px;
+      font-size: 25px;
+      display: inline-block;
+    }
+  }
+}
+
+.additional-information {
+  h1 { font-size: 30px; }
+
+  ul.skills {
+    li {
+      width: 200px;
+      margin: 0 auto 0 auto;
+      display: block;
+      font-size: 16px;
+      > span {
+        color: $white;
+        width: 50%; display: inline-block;
+        &:first-child { text-align: left;  }
+        &:last-child { text-align: center;  }
+      }
+
+      .animated {
+        .hidden-text {
+          font-weight: 200;
+          opacity: 0;
+          position: absolute;
+          -webkit-transition: opacity .15s ease-in-out;
+          -moz-transition: opacity .15s ease-in-out;
+          -ms-transition: opacity .15s ease-in-out;
+          -o-transition: opacity .15s ease-in-out;
+          transition: opacity .15s ease-in-out;
+        }
+        a {
+          color: $white;
+          &:hover {
+            .hidden-text { opacity: 1; }
+          }
+        }
+      }
+
+    }
+  }
+
+}

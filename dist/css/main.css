@@ -1,2 +1,69 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body, .footer {
+  background-color: #2C3E50; }
+
+section.container {
+  min-height: 100%;
+  margin-bottom: -20px; }
+
+.footer {
+  height: 25px; }
+
 h1 {
-  font-size: 22px; }
+  text-align: center;
+  color: white; }
+
+section {
+  padding-top: 20px; }
+
+.personal-information .heading .avatar {
+  width: 200px;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin: 0 auto 0 auto;
+  display: block; }
+.personal-information .heading h1 {
+  font-size: 25px; }
+.personal-information .contacts {
+  display: block;
+  text-align: center;
+  margin-left: -10px; }
+  .personal-information .contacts li {
+    margin-left: 10px;
+    font-size: 25px;
+    display: inline-block; }
+    .personal-information .contacts li:first-child {
+      display: block; }
+
+.additional-information h1 {
+  font-size: 30px; }
+.additional-information ul.skills li {
+  width: 200px;
+  margin: 0 auto 0 auto;
+  display: block;
+  font-size: 16px; }
+  .additional-information ul.skills li > span {
+    color: white;
+    width: 50%;
+    display: inline-block; }
+    .additional-information ul.skills li > span:first-child {
+      text-align: left; }
+    .additional-information ul.skills li > span:last-child {
+      text-align: center; }
+  .additional-information ul.skills li .animated .hidden-text {
+    font-weight: 200;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity 0.15s ease-in-out;
+    -moz-transition: opacity 0.15s ease-in-out;
+    -ms-transition: opacity 0.15s ease-in-out;
+    -o-transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.15s ease-in-out; }
+  .additional-information ul.skills li .animated a {
+    color: white; }
+    .additional-information ul.skills li .animated a:hover .hidden-text {
+      opacity: 1; }
