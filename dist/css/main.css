@@ -19,15 +19,17 @@ h1 {
 section {
   padding-top: 20px; }
 
-.personal-information .heading .avatar {
-  width: 200px;
-  height: auto;
-  border: 3px solid white;
-  border-radius: 50%;
-  margin: 0 auto 0 auto;
-  display: block; }
-.personal-information .heading h1 {
-  font-size: 25px; }
+.personal-information .heading {
+  padding-top: 30px; }
+  .personal-information .heading .avatar {
+    width: 200px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 0 auto 0 auto;
+    display: block; }
+  .personal-information .heading h1 {
+    font-size: 25px; }
 .personal-information .contacts {
   display: block;
   text-align: center;
