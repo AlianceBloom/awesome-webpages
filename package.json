@@ -9,7 +9,8 @@
     "gulp": "~3.8.10",
     "gulp-slim": "0.0.10",
     "gulp-sass": "~1.2.4",
-    "flat-ui": "~2.1.1"
+    "flat-ui": "~2.1.1",
+    "node-bourbon": "~1.2.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

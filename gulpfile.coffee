@@ -1,10 +1,11 @@
 gulp         = require 'gulp'
 slim         = require 'gulp-slim'
 sass         = require 'gulp-sass'
-
+bourbon      = require('node-bourbon');
 gulp.task "styles::build::scss", ->
   gulp.src './src/scss/*.scss'
-  .pipe sass()
+  .pipe sass
+    includePaths: bourbon.includePaths
   .pipe gulp.dest('./dist/css')
 
 gulp.task 'html::build::slim', ->
