@@ -1,3 +1,58 @@
 @import "bourbon";
 
-html, body { width: 100%; height: 100%; position: relative;   @include animation(scale 1.0s ease-in, slide 2.0s ease);}
+html, body { width: 100%; height: 100%; position: relative; }
+
+
+
+.wrapper {
+  position: absolute; top: 50%; left: 50%;
+  width: 600px; height: 300px;
+  margin: -150px 0 0 -300px;
+  background-color: #34495e;
+}
+
+
+.outside-links {
+  position: absolute; width: 100%; height: 100%;
+  .left-wrapper {
+    position: absolute;
+    height: 100%; width: 30px;
+    left: -30px;
+    > a {
+      position: absolute;
+      @include transform(rotateZ(90deg));
+    }
+  }
+  > a {
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    &.bottom {
+      width: 100%;
+      bottom: -25px;
+    }
+    &.left {
+      left: -70px;
+      top: 50%;
+      @include transform(translateY(-50%));
+    }
+    &.right {
+      right: -70px;
+      top: 50%;
+      @include transform(translateY(-50%));
+    }
+    &.top {
+      width: 100%;
+      top: -25px;
+      @include transform(translateY(-50%));
+    }
+    &:hover {
+      > span { opacity: 1; }
+    }
+    > span {
+      @include transition(opacity 0.5s ease-in 0s);
+      opacity: 0.3;
+    }
+
+  }
+}
