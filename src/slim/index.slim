@@ -5,10 +5,9 @@ html
     link rel="shortcut icon" href="img/favicon.png"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     link href="css/reset.css" media="all" rel="stylesheet"
-    link href="css/vendor/bootstrap.min.css" media="all" rel="stylesheet"
-    link href="css/font-awesome.css" media="all" rel="stylesheet"
-    link href="css/flat-ui.css" media="all" rel="stylesheet"
-    link href="css/main.css" media="all" rel="stylesheet"
+    link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'
+    link href="css/font-awesome.css" rel='stylesheet' type='text/css'
+    link href="css/main.css" rel='stylesheet' type='text/css'
 
   body
     .wrapper
@@ -18,21 +17,29 @@ html
         div.about-me
           h1 Edgar Meinart
           h2 Web developer
+          ul.skills
+            li
+              a.zoomed href="#"
+                img src="img/rails.png"
+            li
+              a.zoomed href="#"
+                img src="img/html5.png"
+
       section.footer
         ul.contacts
-          li.github
+          li.github.zoomed
             a href="https://github.com/AlianceBloom" target="_blank"
               i.fa.fa-github-alt
-          li.linkedin
+          li.linkedin.zoomed
             a href="http://lv.linkedin.com/pub/edgar-meinart/83/360/314/" target="_blank"
               i.fa.fa-linkedin-square
-          li.facebook
+          li.facebook.zoomed
             a href="https://www.facebook.com/egdar.meitnardt" target="_blank"
               i.fa.fa-facebook-square
-          li.twitter
+          li.twitter.zoomed
             a href="https://twitter.com/edgarmeinart" target="_blank"
               i.fa.fa-twitter-square
-          li.email
+          li.email.zoomed
             a href="mailto:edgars@meinarts.name"
               i.fa.fa-envelope-o
 
