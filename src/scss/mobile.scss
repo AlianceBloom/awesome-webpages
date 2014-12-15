@@ -1,0 +1,32 @@
+@import "bourbon";
+
+
+@media (max-width: 650px) {
+
+  .wrapper {
+    min-width: 350px;
+    font-family: 'Lato', sans-serif;
+    position: inherit; top: inherit; left: inherit;
+    @include transform(translateX(0) translateY(0));
+    width: 100%;
+    height: inherit;
+    > .content {
+      min-height: inherit;
+      > div {
+        text-align: center;
+        float: none;
+        display: block;
+        width: 100%;
+        &.about-me {
+          > ul.skills {
+            text-align: center;
+            li {
+              float: none;
+              img { width: 80px; height: auto; margin-top: 20px; }
+            }
+          }
+        }
+      }
+    }
+  }
+}

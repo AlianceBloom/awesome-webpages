@@ -48,7 +48,7 @@ html, body {
             .wrapper > .content > div.about-me > ul.skills li a {
               display: block; }
             .wrapper > .content > div.about-me > ul.skills li img {
-              width: 30px;
+              width: 40px;
               height: auto; }
   .wrapper > .footer {
     position: relative;
@@ -98,3 +98,11 @@ html, body {
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
     transform: scale(1.5); }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
