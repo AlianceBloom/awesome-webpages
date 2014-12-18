@@ -1,83 +1,96 @@
-html, body { width: 100%; height: 100%; }
-body, .footer { background-color: #2C3E50; }
+@import "bourbon";
 
-$white: white;
-section.container {
-  min-height: 100%;
-  margin-bottom: -20px;
-}
-.footer {
-  height: 25px;
-}
-h1 { text-align: center; color: $white; }
+html, body { width: 100%; height: 100%; position: relative; }
 
-section {
-  padding-top: 20px;
-}
+.wrapper {
+  font-family: 'Lato', sans-serif;
+  position: absolute; top: 50%; left: 50%;
+  width: 600px; height: 350px;
+  @include transform(translateX(-50%) translateY(-50%));
 
-.personal-information {
-  .heading {
-    padding-top: 30px;
-    .avatar {
-      width: 200px; height: auto;
-      border: 3px solid $white;
-      border-radius: 50%;
-      margin: 0 auto 0 auto;
-      display: block;
-    }
-    h1 { font-size: 25px; }
-  }
-  .contacts {
-    display: block;
-    text-align: center;
-    margin-left: -10px;
-    li {
-      &:first-child, &:last-child {
-        display: block;
-      }
-      margin-left: 10px;
-      font-size: 25px;
-      display: inline-block;
-    }
-  }
-}
-
-.additional-information {
-  h1 { font-size: 30px; }
-
-  ul.skills {
-    li {
-      width: 200px;
-      margin: 0 auto 0 auto;
-      display: block;
-      font-size: 16px;
-      > span {
-        color: $white;
-        width: 50%; display: inline-block;
-        &:first-child { text-align: left;  }
-        &:last-child { text-align: center;  }
-      }
-
-      .animated {
-        .hidden-text {
-          font-weight: 200;
-          opacity: 0;
-          position: absolute;
-          -webkit-transition: opacity .15s ease-in-out;
-          -moz-transition: opacity .15s ease-in-out;
-          -ms-transition: opacity .15s ease-in-out;
-          -o-transition: opacity .15s ease-in-out;
-          transition: opacity .15s ease-in-out;
+    > .content {
+      min-height: 200px;
+      background-color: #34495e;
+      padding: 50px;
+      > div {
+        float: left;
+        width: 50%;
+        &.logo {
+          img {
+            width: 200px;
+            height: auto;
+          }
         }
-        a {
-          color: $white;
-          &:hover {
-            .hidden-text { opacity: 1; }
+
+        &.about-me {
+          margin-top: 15%;
+          > h1 { font-size: 30px; color: white; text-transform: uppercase; margin: 0; }
+          > h2 { font-size: 25px; font-weight: 200; text-transform: lowercase; color: white; margin: 0; }
+          > ul.skills {
+            margin-top: 5px;
+            margin-left: -10px;
+            li {
+              display: block;
+              float: left;
+              margin-left: 10px;
+              a { display: block; }
+              img { width: 40px; height: auto; }
+            }
+          }
+        }
+      }
+    }
+    > .footer {
+      position: relative;
+      height: 50px;
+      background-color: #39465e;
+
+      &:before {
+        content: '';
+        position: absolute; top: 0;
+        width: 100%; height: 2px;
+        background: url(../img/sprite.png);
+      }
+
+      ul {
+        margin: 0 0 0 25px;
+        &.contacts {
+          li {
+            margin-left: 25px;
+            margin-top: 13px;
+            text-align: center;
+            float: left;
+            > a {
+              display: block;
+              color: white;
+              i { font-size: 25px; }
+            }
+            &.email { float: right; margin-right: 50px; }
           }
         }
       }
 
     }
-  }
-
 }
+
+.zoomed {
+  @include transform(scale(1.0));
+  @include transition-property(transform);
+  @include transition-duration(0.3s);
+  @include transition-timing-function(ease-in);
+  &:hover {
+    @include transform(scale(1.5));
+  }
+}
+
+.clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
