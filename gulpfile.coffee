@@ -2,15 +2,17 @@ gulp         = require 'gulp'
 slim         = require 'gulp-slim'
 sass         = require 'gulp-sass'
 coffee       = require 'gulp-coffee'
-bourbon      = require('node-bourbon');
-
-$        = require("gulp-load-plugins")(lazy: false)
-# $logger  = $.util.log
+gutil        = require 'gulp-util'
+bourbon      = require 'node-bourbon'
+notify       = require 'gulp-notify'
 
 gulp.task "styles::build::scss", ->
   gulp.src './src/scss/*.scss'
   .pipe sass
     includePaths: bourbon.includePaths
+    onError: (error) ->
+      notify.onError "Error to build task:styles::build::scss \n Error: #{error}"
+      gutil.log gutil.colors.red(error)
   .pipe gulp.dest('./dist/css')
 
 gulp.task 'html::build::slim', ->
@@ -20,8 +22,12 @@ gulp.task 'html::build::slim', ->
 
 gulp.task "scripts::build::coffee", ->
   gulp.src("./src/coffee/**/*.coffee")
-  .pipe(coffee({bare: true}))
-  .pipe(gulp.dest("./dist/js"))
+  .pipe coffee
+    bare: true
+  .on 'error', (error) ->
+    notify.onError "Error to build scripts::build::coffee \n Error: #{error}"
+    gutil.log error
+  .pipe gulp.dest("./dist/js")
 
 gulp.task "build::all", ['styles::build::scss', 'html::build::slim', 'scripts::build::coffee']
 
