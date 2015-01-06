@@ -11,46 +11,75 @@ html
     link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'
     link href="css/font-awesome.css" rel='stylesheet' type='text/css'
     link href="css/main.css" rel='stylesheet' type='text/css'
+    link href="css/off_canvas_navigation.css" rel='stylesheet' type='text/css'
     link href="css/index.css" rel='stylesheet' type='text/css'
     link href="css/mobile.css" rel='stylesheet' type='text/css'
 
   body
-    .wrapper
-      section.content
-        div.logo
-          img src="img/me.jpg"
-        div.about-me
-          h1 Edgar Meinart
-          h2 Web developer
-          ul.skills
-            li
-              a.zoomed href="#"
-                img src="img/rails.png"
-            li
-              a.zoomed href="#"
-                img src="img/html5.png"
-            li.clearfix
+    .container
+      / OFF-CANVAS menu
+      .menu-wrap
+        nav.menu
+          .ninja-eyes
 
-      section.footer
-        ul.contacts
-          li.github.zoomed
-            a href="https://github.com/AlianceBloom" target="_blank"
-              i.fa.fa-github-alt
-          li.linkedin.zoomed
-            a href="http://lv.linkedin.com/pub/edgar-meinart/83/360/314/" target="_blank"
-              i.fa.fa-linkedin-square
-          li.facebook.zoomed
-            a href="https://www.facebook.com/egdar.meitnardt" target="_blank"
-              i.fa.fa-facebook-square
-          li.twitter.zoomed
-            a href="https://twitter.com/edgarmeinart" target="_blank"
-              i.fa.fa-twitter-square
-          li.email.zoomed
-            a href="mailto:edgars@meinarts.name"
-              i.fa.fa-envelope-o
+          .icon-list
+            a href="#home"
+              span Home
+            a href="#portfolio"
+              span Portfolio
+            a href="#skills"
+              span Skills
 
-    script src="js/jquery.js"
-    script src="js/actions.js"
+        button.close-button id="close_button" data-offcavnas-action="close"
+          | Close buttoSkillsn
+
+      button.menu-button id="open_button" data-offcavnas-action="open"
+        | Open Menu
+
+      .content-wrap#content_wrap data-offcavnas-action="close"
+        .content
+          .wrapper
+            section.index-content
+              div.logo
+                img src="img/me.jpg"
+              div.about-me
+                h1 Edgar Meinart
+                h2 Web developer
+                ul.skills
+                  li
+                    a.zoomed href="#"
+                      img src="img/rails.png"
+                  li
+                    a.zoomed href="#"
+                      img src="img/html5.png"
+                  li.clearfix
+
+            section.footer
+              ul.contacts
+                li.github.zoomed
+                  a href="https://github.com/AlianceBloom" target="_blank"
+                    i.fa.fa-github-alt
+                li.linkedin.zoomed
+                  a href="http://lv.linkedin.com/pub/edgar-meinart/83/360/314/" target="_blank"
+                    i.fa.fa-linkedin-square
+                li.facebook.zoomed
+                  a href="https://www.facebook.com/egdar.meitnardt" target="_blank"
+                    i.fa.fa-facebook-square
+                li.twitter.zoomed
+                  a href="https://twitter.com/edgarmeinart" target="_blank"
+                    i.fa.fa-twitter-square
+                li.email.zoomed
+                  a href="mailto:edgars@meinarts.name"
+                    i.fa.fa-envelope-o
+
+    script src="js/vendor/jquery.js"
+    script src="js/vendor/underscore.js"
+    script src="js/vendor/backbone.js"
+
+    script src="js/global_view.js"
+    script src="js/page.js"
+
+
     / javascript:
     /   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     /   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

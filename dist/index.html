@@ -11,54 +11,74 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
     <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/off_canvas_navigation.css" rel="stylesheet" type="text/css" />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
     <link href="css/mobile.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="wrapper">
-      <section class="content">
-        <div class="logo">
-          <img src="img/me.jpg" />
+    <div class="container">
+      <div class="menu-wrap">
+        <nav class="menu">
+          <div class="ninja-eyes"></div>
+          <div class="icon-list">
+            <a href="#home"><span>Home</span></a><a href="#portfolio"><span>Portfolio</span></a><a href="#skills"><span>Skills</span></a>
+          </div>
+        </nav>
+        <button class="close-button" data-offcavnas-action="close" id="close_button">Close buttoSkillsn</button>
+      </div>
+      <button class="menu-button" data-offcavnas-action="open" id="open_button">Open Menu</button>
+      <div class="content-wrap" data-offcavnas-action="close" id="content_wrap">
+        <div class="content">
+          <div class="wrapper">
+            <section class="index-content">
+              <div class="logo">
+                <img src="img/me.jpg" />
+              </div>
+              <div class="about-me">
+                <h1>
+                  Edgar Meinart
+                </h1>
+                <h2>
+                  Web developer
+                </h2>
+                <ul class="skills">
+                  <li>
+                    <a class="zoomed" href="#"><img src="img/rails.png" /></a>
+                  </li>
+                  <li>
+                    <a class="zoomed" href="#"><img src="img/html5.png" /></a>
+                  </li>
+                  <li class="clearfix"></li>
+                </ul>
+              </div>
+            </section>
+            <section class="footer">
+              <ul class="contacts">
+                <li class="github zoomed">
+                  <a href="https://github.com/AlianceBloom" target="_blank"><i class="fa fa-github-alt"></i></a>
+                </li>
+                <li class="linkedin zoomed">
+                  <a href="http://lv.linkedin.com/pub/edgar-meinart/83/360/314/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                </li>
+                <li class="facebook zoomed">
+                  <a href="https://www.facebook.com/egdar.meitnardt" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                </li>
+                <li class="twitter zoomed">
+                  <a href="https://twitter.com/edgarmeinart" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                </li>
+                <li class="email zoomed">
+                  <a href="mailto:edgars@meinarts.name"><i class="fa fa-envelope-o"></i></a>
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
-        <div class="about-me">
-          <h1>
-            Edgar Meinart
-          </h1>
-          <h2>
-            Web developer
-          </h2>
-          <ul class="skills">
-            <li>
-              <a class="zoomed" href="#"><img src="img/rails.png" /></a>
-            </li>
-            <li>
-              <a class="zoomed" href="#"><img src="img/html5.png" /></a>
-            </li>
-            <li class="clearfix"></li>
-          </ul>
-        </div>
-      </section>
-      <section class="footer">
-        <ul class="contacts">
-          <li class="github zoomed">
-            <a href="https://github.com/AlianceBloom" target="_blank"><i class="fa fa-github-alt"></i></a>
-          </li>
-          <li class="linkedin zoomed">
-            <a href="http://lv.linkedin.com/pub/edgar-meinart/83/360/314/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-          </li>
-          <li class="facebook zoomed">
-            <a href="https://www.facebook.com/egdar.meitnardt" target="_blank"><i class="fa fa-facebook-square"></i></a>
-          </li>
-          <li class="twitter zoomed">
-            <a href="https://twitter.com/edgarmeinart" target="_blank"><i class="fa fa-twitter-square"></i></a>
-          </li>
-          <li class="email zoomed">
-            <a href="mailto:edgars@meinarts.name"><i class="fa fa-envelope-o"></i></a>
-          </li>
-        </ul>
-      </section>
+      </div>
     </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/actions.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/underscore.js"></script>
+    <script src="js/vendor/backbone.js"></script>
+    <script src="js/global_view.js"></script>
+    <script src="js/page.js"></script>
   </body>
 </html>

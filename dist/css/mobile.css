@@ -1,4 +1,9 @@
 @media (max-width: 650px) {
+  .menu-wrap {
+    max-width: 100%; }
+    .menu-wrap .icon-list a {
+      text-align: center; }
+
   .wrapper {
     min-width: 350px;
     font-family: 'Lato', sans-serif;
@@ -12,18 +17,18 @@
     transform: translateX(0) translateY(0);
     width: 100%;
     height: inherit; }
-    .wrapper > .content {
+    .wrapper > .index-content {
       min-height: inherit; }
-      .wrapper > .content > div {
+      .wrapper > .index-content > div {
         text-align: center;
         float: none;
         display: block;
         width: 100%; }
-        .wrapper > .content > div.about-me > ul.skills {
+        .wrapper > .index-content > div.about-me > ul.skills {
           text-align: center; }
-          .wrapper > .content > div.about-me > ul.skills li {
+          .wrapper > .index-content > div.about-me > ul.skills li {
             float: none; }
-            .wrapper > .content > div.about-me > ul.skills li img {
+            .wrapper > .index-content > div.about-me > ul.skills li img {
               width: 80px;
               height: auto;
               margin-top: 20px; }

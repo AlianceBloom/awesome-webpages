@@ -10,39 +10,39 @@
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%); }
-  .wrapper > .content {
+  .wrapper > .index-content {
     min-height: 200px;
     background-color: #34495e;
     padding: 50px; }
-    .wrapper > .content > div {
+    .wrapper > .index-content > div {
       float: left;
       width: 50%; }
-      .wrapper > .content > div.logo img {
+      .wrapper > .index-content > div.logo img {
         width: 200px;
         height: auto; }
-      .wrapper > .content > div.about-me {
+      .wrapper > .index-content > div.about-me {
         margin-top: 15%; }
-        .wrapper > .content > div.about-me > h1 {
+        .wrapper > .index-content > div.about-me > h1 {
           font-size: 30px;
           color: white;
           text-transform: uppercase;
           margin: 0; }
-        .wrapper > .content > div.about-me > h2 {
+        .wrapper > .index-content > div.about-me > h2 {
           font-size: 25px;
           font-weight: 200;
           text-transform: lowercase;
           color: white;
           margin: 0; }
-        .wrapper > .content > div.about-me > ul.skills {
+        .wrapper > .index-content > div.about-me > ul.skills {
           margin-top: 5px;
           margin-left: -10px; }
-          .wrapper > .content > div.about-me > ul.skills li {
+          .wrapper > .index-content > div.about-me > ul.skills li {
             display: block;
             float: left;
             margin-left: 10px; }
-            .wrapper > .content > div.about-me > ul.skills li a {
+            .wrapper > .index-content > div.about-me > ul.skills li a {
               display: block; }
-            .wrapper > .content > div.about-me > ul.skills li img {
+            .wrapper > .index-content > div.about-me > ul.skills li img {
               width: 40px;
               height: auto; }
   .wrapper > .footer {

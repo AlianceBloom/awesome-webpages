@@ -7,7 +7,7 @@
   width: 600px; height: 350px;
   @include transform(translateX(-50%) translateY(-50%));
 
-    > .content {
+    > .index-content {
       min-height: 200px;
       background-color: #34495e;
       padding: 50px;

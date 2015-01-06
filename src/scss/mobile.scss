@@ -3,6 +3,15 @@
 
 @media (max-width: 650px) {
 
+  .menu-wrap {
+    max-width: 100%;
+    .icon-list {
+      a {
+        text-align: center;
+      }
+    }
+  }
+
   .wrapper {
     min-width: 350px;
     font-family: 'Lato', sans-serif;
@@ -10,7 +19,7 @@
     @include transform(translateX(0) translateY(0));
     width: 100%;
     height: inherit;
-    > .content {
+    > .index-content {
       min-height: inherit;
       > div {
         text-align: center;
