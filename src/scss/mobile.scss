@@ -29,4 +29,18 @@
       }
     }
   }
+
+  .project-list {
+    > ul {
+      > li {
+        float: left;
+        margin: 0 0 10px 0;
+        width: 100%; min-width: auto;
+        > hr { display: block; background-color: gray; margin: 40px 20px 0 20px }
+
+      }
+    }
+  }
+
+
 }

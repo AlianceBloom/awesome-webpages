@@ -1,0 +1,22 @@
+.project-list {
+  font-family: 'Lato', sans-serif; }
+  .project-list > ul > li {
+    float: left;
+    margin: 1em 0 0 calc(100% / 8);
+    width: calc(100% / 6);
+    min-width: 100px; }
+    .project-list > ul > li > a {
+      display: block; }
+      .project-list > ul > li > a img {
+        width: 100%;
+        height: auto; }
+    .project-list > ul > li > h2, .project-list > ul > li h3 {
+      text-align: center; }
+    .project-list > ul > li > p {
+      text-align: center; }
+    .project-list > ul > li > hr {
+      display: none;
+      border: 0;
+      height: 1px; }
+    .project-list > ul > li.hidden > h2 i {
+      background-color: black; }
