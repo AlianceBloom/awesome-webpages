@@ -5,12 +5,6 @@ html, body, .container, .content-wrap {
   font-family: 'Lato', sans-serif;
 
 }
-body {
-  background: red;
-}
-.container {
-  background: #373a47;
-}
 
 .content-wrap {
   overflow-y: scroll;
@@ -21,7 +15,6 @@ body {
 
 .content {
   position: relative;
-  background: #b4bad2;
   display: inline-block;
   width: 100%; height: 100%;
   &::before {
@@ -110,7 +103,6 @@ body {
   z-index: 1001;
   width: 100%; max-width: 360px;
   height: 320px;
-  background: #fdfdf8;
   color: #373a47;
   // padding: 2em;
   -webkit-transform: translate3d(-320px, -320px, 0);
@@ -121,7 +113,6 @@ body {
 
 .ninja-eyes {
   height: 40px;
-  background: black;
 }
 
 .profile {
@@ -146,7 +137,6 @@ body {
   }
   i {
     opacity: 0.5;
-    color: #c94e50;
   }
   span {
     margin-left: 10px;

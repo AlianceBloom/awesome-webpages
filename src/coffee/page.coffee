@@ -3,4 +3,7 @@ window.page.views = {}
 
 
 $ ->
-	list_view = new GlobalView
+	window.location.hash = '#home'
+	global_route = new GlobalRoute
+	global_view  = new GlobalView
+	Backbone.history.start()
