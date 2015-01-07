@@ -12,8 +12,8 @@
   transform: translateX(-50%) translateY(-50%); }
   .wrapper > .index-content {
     min-height: 200px;
-    background-color: #34495e;
-    padding: 50px; }
+    background-color: white;
+    padding: 50px 50px 10px 50px; }
     .wrapper > .index-content > div {
       float: left;
       width: 50%; }
@@ -24,14 +24,14 @@
         margin-top: 15%; }
         .wrapper > .index-content > div.about-me > h1 {
           font-size: 30px;
-          color: white;
+          color: black;
           text-transform: uppercase;
           margin: 0; }
         .wrapper > .index-content > div.about-me > h2 {
           font-size: 25px;
           font-weight: 200;
           text-transform: lowercase;
-          color: white;
+          color: black;
           margin: 0; }
         .wrapper > .index-content > div.about-me > ul.skills {
           margin-top: 5px;
@@ -48,7 +48,7 @@
   .wrapper > .footer {
     position: relative;
     height: 50px;
-    background-color: #39465e; }
+    background-color: white; }
     .wrapper > .footer:before {
       content: '';
       position: absolute;
@@ -65,9 +65,8 @@
         float: left; }
         .wrapper > .footer ul.contacts li > a {
           display: block;
-          color: white; }
+          color: #2895f1; }
           .wrapper > .footer ul.contacts li > a i {
             font-size: 25px; }
-        .wrapper > .footer ul.contacts li.email {
-          float: right;
-          margin-right: 50px; }
+        .wrapper > .footer ul.contacts li.email a {
+          color: red; }

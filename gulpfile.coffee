@@ -6,10 +6,12 @@ gutil        = require 'gulp-util'
 bourbon      = require 'node-bourbon'
 notify       = require 'gulp-notify'
 
+scss_included_paths = bourbon.includePaths.concat ['./src/scss/helpers']
+
 gulp.task "styles::build::scss", ->
   gulp.src './src/scss/*.scss'
   .pipe sass
-    includePaths: bourbon.includePaths
+    includePaths: scss_included_paths
     onError: (error) ->
       notify.onError "Error to build task:styles::build::scss \n Error: #{error}"
       gutil.log gutil.colors.red(error)

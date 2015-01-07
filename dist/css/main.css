@@ -1,6 +1,9 @@
 body {
   background: white; }
 
+a {
+  color: #2895f1; }
+
 .zoomed {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -35,13 +38,19 @@ button {
   cursor: pointer; }
 
 .menu-wrap {
-  background: #fdfdf8; }
+  background: #ECECEC; }
+  .menu-wrap .icon-list a {
+    background: #6C7A89;
+    color: #373a47; }
+    .menu-wrap .icon-list a:hover, .menu-wrap .icon-list a:focus {
+      background-color: #95A5A6; }
 
-.ninja-eyes {
-  background: black; }
+.close-button {
+  color: white;
+  background-color: #446CB3; }
 
 .container {
-  background: #4183D7; }
+  background: white; }
 
 .content {
   background: white; }

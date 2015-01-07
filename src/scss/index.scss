@@ -1,5 +1,5 @@
 @import "bourbon";
-
+@import "helpers/variables";
 
 .wrapper {
   font-family: 'Lato', sans-serif;
@@ -9,8 +9,8 @@
 
     > .index-content {
       min-height: 200px;
-      background-color: #34495e;
-      padding: 50px;
+      background-color: $index_block_color;
+      padding: 50px 50px 10px 50px;
       > div {
         float: left;
         width: 50%;
@@ -23,8 +23,8 @@
 
         &.about-me {
           margin-top: 15%;
-          > h1 { font-size: 30px; color: white; text-transform: uppercase; margin: 0; }
-          > h2 { font-size: 25px; font-weight: 200; text-transform: lowercase; color: white; margin: 0; }
+          > h1 { font-size: 30px; color: $index_heading_text_color; text-transform: uppercase; margin: 0; }
+          > h2 { font-size: 25px; font-weight: 200; text-transform: lowercase; color: $index_heading_text_color; margin: 0; }
           > ul.skills {
             margin-top: 5px;
             margin-left: -10px;
@@ -42,7 +42,7 @@
     > .footer {
       position: relative;
       height: 50px;
-      background-color: #39465e;
+      background-color: $index_block_color;
 
       &:before {
         content: '';
@@ -61,10 +61,10 @@
             float: left;
             > a {
               display: block;
-              color: white;
+              color: $link_colors;
               i { font-size: 25px; }
             }
-            &.email { float: right; margin-right: 50px; }
+            &.email { a { color: $index_email_color; } }
           }
         }
       }

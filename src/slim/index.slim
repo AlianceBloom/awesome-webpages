@@ -22,20 +22,21 @@ html
     .container
       .menu-wrap
         nav.menu
-          .ninja-eyes
-
           .icon-list
             a href="#home"
+              / i.fa.fa-home
               span Home
             a href="#portfolio"
+              / i.fa.fa-folder
               span Portfolio
             a href="#skills"
+              / i.fa.fa-star
               span Skills
 
-        button.close-button id="close_button" data-offcavnas-action="close"
-          | Close buttoSkillsn
+        a.close-button#close_button href="#" data-offcavnas-action="close"
+          | HIDE MENU
 
-      button.menu-button id="open_button" data-offcavnas-action="open"
+      button.menu-button#open_button data-offcavnas-action="open"
         | Open Menu
 
       .content-wrap#content_wrap data-offcavnas-action="close"
@@ -59,6 +60,9 @@ html
 
             section.footer
               ul.contacts
+                li.email.zoomed
+                  a href="mailto:edgars@meinarts.name"
+                    i.fa.fa-envelope-o
                 li.github.zoomed
                   a href="https://github.com/AlianceBloom" target="_blank"
                     i.fa.fa-github-alt
@@ -71,9 +75,6 @@ html
                 li.twitter.zoomed
                   a href="https://twitter.com/edgarmeinart" target="_blank"
                     i.fa.fa-twitter-square
-                li.email.zoomed
-                  a href="mailto:edgars@meinarts.name"
-                    i.fa.fa-envelope-o
 
     script src="js/vendor/jquery.js"
     script src="js/vendor/underscore.js"

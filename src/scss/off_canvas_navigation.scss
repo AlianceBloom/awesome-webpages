@@ -3,7 +3,6 @@ html, body, .container, .content-wrap {
   width: 100%;
   height: 100%;
   font-family: 'Lato', sans-serif;
-
 }
 
 .content-wrap {
@@ -17,20 +16,6 @@ html, body, .container, .content-wrap {
   position: relative;
   display: inline-block;
   width: 100%; height: 100%;
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    content: '';
-    opacity: 0;
-    width: 0; height: 0;
-    -webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
-    transition: opacity 0.3s, transform 0s 0.3s;
-  }
 }
 
 /* Overlay */
@@ -66,34 +51,14 @@ html, body, .container, .content-wrap {
 /* Close Button */
 
 .close-button {
-  width: 1em;
-  height: 1em;
   position: absolute;
-  right: 1em;
-  top: 1em;
-  overflow: hidden;
-  text-indent: 1em;
-  border: none;
-  background: transparent;
-  color: transparent;
-  &::before, &::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    background: #b8b7ad;
-  }
-  &::before {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  &::after {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0.8em 0;
+  text-decoration: none;
 }
+
 
 /* Menu */
 
@@ -127,19 +92,11 @@ html, body, .container, .content-wrap {
 }
 
 .icon-list a {
+  font-size: 20px;
   display: block;
-  color: #b8b7ad;
   font-weight: 700;
   padding: 0.8em 0.55em;
-  &:hover, &:focus {
-    color: #c94e50;
-  }
-  i {
-    opacity: 0.5;
-  }
-  span {
-    margin-left: 10px;
-  }
+  text-align: center;
 }
 
 /* Shown menu */

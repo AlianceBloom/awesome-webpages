@@ -24,14 +24,22 @@
         float: none;
         display: block;
         width: 100%; }
-        .wrapper > .index-content > div.about-me > ul.skills {
-          text-align: center; }
-          .wrapper > .index-content > div.about-me > ul.skills li {
-            float: none; }
-            .wrapper > .index-content > div.about-me > ul.skills li img {
-              width: 80px;
-              height: auto;
-              margin-top: 20px; }
+        .wrapper > .index-content > div.about-me > ul.skills li {
+          float: none; }
+          .wrapper > .index-content > div.about-me > ul.skills li img {
+            width: 80px;
+            height: auto;
+            margin-top: 20px; }
+    .wrapper > .footer {
+      text-align: center; }
+      .wrapper > .footer > ul {
+        text-align: center;
+        display: inline-block;
+        margin-left: 0; }
+        .wrapper > .footer > ul > li:first-child {
+          margin-left: 0; }
+        .wrapper > .footer > ul > li > a > i {
+          font-size: 30px !important; }
 
   .project-list > ul > li {
     float: left;
