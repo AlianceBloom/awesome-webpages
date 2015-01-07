@@ -41,13 +41,16 @@ button {
   background: #ECECEC; }
   .menu-wrap .icon-list a {
     background: #6C7A89;
-    color: #373a47; }
+    color: black;
+    text-decoration: blink;
+    text-transform: uppercase;
+    font-weight: 300; }
     .menu-wrap .icon-list a:hover, .menu-wrap .icon-list a:focus {
       background-color: #95A5A6; }
 
 .close-button {
-  color: white;
-  background-color: #446CB3; }
+  color: black;
+  font-weight: 300; }
 
 .container {
   background: white; }

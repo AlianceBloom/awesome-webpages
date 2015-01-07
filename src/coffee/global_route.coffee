@@ -9,6 +9,8 @@ class window.GlobalRoute extends Backbone.Router
     @navigate 'home', trigger: true
 
   index: () ->
+    $('#content').html AwesomeWebpage.templates.home()
 
   portfolio: () ->
+    $('#content').html AwesomeWebpage.templates.portfolio()
 

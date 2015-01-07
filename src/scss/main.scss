@@ -37,15 +37,20 @@ button {
   background: $menu_background_color;
   .icon-list a {
     background: $menu_item_color;
-    color: #373a47;
+    color: black;
+    text-decoration: blink;
+    text-transform: uppercase;
+    font-weight: 300;
     &:hover, &:focus {
       background-color: $menu_selected_item_color;
     }
   }
 }
+
 .close-button {
-  color: white;
-  background-color: $menu_close_button_color;
+  color: black;
+  font-weight: 300;
+
 }
 
 .ninja-eyes {

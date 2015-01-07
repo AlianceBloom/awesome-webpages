@@ -20,9 +20,13 @@ window.GlobalRoute = (function(_super) {
     });
   };
 
-  GlobalRoute.prototype.index = function() {};
+  GlobalRoute.prototype.index = function() {
+    return $('#content').html(AwesomeWebpage.templates.home());
+  };
 
-  GlobalRoute.prototype.portfolio = function() {};
+  GlobalRoute.prototype.portfolio = function() {
+    return $('#content').html(AwesomeWebpage.templates.portfolio());
+  };
 
   return GlobalRoute;
 

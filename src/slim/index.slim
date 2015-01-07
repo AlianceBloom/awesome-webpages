@@ -16,6 +16,7 @@ html
     link href="css/main.css" rel='stylesheet' type='text/css'
     link href="css/off_canvas_navigation.css" rel='stylesheet' type='text/css'
     link href="css/index.css" rel='stylesheet' type='text/css'
+    link href="css/projects.css" rel='stylesheet' type='text/css'
     link href="css/mobile.css" rel='stylesheet' type='text/css'
 
   body
@@ -40,46 +41,15 @@ html
         | Open Menu
 
       .content-wrap#content_wrap data-offcavnas-action="close"
-        .content
-          .offset
-          .wrapper
-            section.index-content
-              div.logo
-                img src="img/me.jpg"
-              div.about-me
-                h1 Edgar Meinart
-                h2 Web developer
-                ul.skills
-                  li
-                    a.zoomed href="#"
-                      img src="img/rails.png"
-                  li
-                    a.zoomed href="#"
-                      img src="img/html5.png"
-                  li.clearfix
+        .content#content
 
-            section.footer
-              ul.contacts
-                li.email.zoomed
-                  a href="mailto:edgars@meinarts.name"
-                    i.fa.fa-envelope-o
-                li.github.zoomed
-                  a href="https://github.com/AlianceBloom" target="_blank"
-                    i.fa.fa-github-alt
-                li.linkedin.zoomed
-                  a href="http://lv.linkedin.com/pub/edgar-meinart/83/360/314/" target="_blank"
-                    i.fa.fa-linkedin-square
-                li.facebook.zoomed
-                  a href="https://www.facebook.com/egdar.meitnardt" target="_blank"
-                    i.fa.fa-facebook-square
-                li.twitter.zoomed
-                  a href="https://twitter.com/edgarmeinart" target="_blank"
-                    i.fa.fa-twitter-square
 
     script src="js/vendor/jquery.js"
     script src="js/vendor/underscore.js"
     script src="js/vendor/backbone.js"
+    script src="js/vendor/handlebars-v2.0.0.js"
 
+    script src="js/templates.js"
     script src="js/global_view.js"
     script src="js/global_route.js"
     script src="js/page.js"
