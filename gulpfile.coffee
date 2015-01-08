@@ -18,6 +18,7 @@ gulp.task "styles::build::scss", ->
   gulp.src './src/scss/*.scss'
   .pipe sass
     includePaths: scss_included_paths
+    "sourcemap=none": true
     onError: (error) ->
       gutil.log gutil.colors.red(error)
   .pipe gulp.dest('./dist/css')

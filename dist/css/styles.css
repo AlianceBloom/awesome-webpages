@@ -443,12 +443,16 @@ footer {
         float: none;
         display: block;
         width: 100%; }
-        .wrapper > .index-content > div.about-me > ul.skills li {
-          float: none; }
-          .wrapper > .index-content > div.about-me > ul.skills li img {
-            width: 80px;
-            height: auto;
-            margin-top: 20px; }
+        .wrapper > .index-content > div.about-me > ul.skills {
+          margin-left: auto;
+          margin-right: auto; }
+          .wrapper > .index-content > div.about-me > ul.skills li {
+            margin: 0;
+            float: none; }
+            .wrapper > .index-content > div.about-me > ul.skills li img {
+              width: 80px;
+              height: auto;
+              margin-top: 20px; }
     .wrapper > .footer {
       text-align: center; }
       .wrapper > .footer > ul {
