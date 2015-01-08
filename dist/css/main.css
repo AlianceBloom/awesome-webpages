@@ -38,15 +38,15 @@ button {
   cursor: pointer; }
 
 .menu-wrap {
-  background: #ECECEC; }
+  background: white; }
   .menu-wrap .icon-list a {
-    background: #6C7A89;
+    background: white;
     color: black;
     text-decoration: blink;
     text-transform: uppercase;
     font-weight: 300; }
     .menu-wrap .icon-list a:hover, .menu-wrap .icon-list a:focus {
-      background-color: #95A5A6; }
+      background-color: white; }
 
 .close-button {
   color: black;
