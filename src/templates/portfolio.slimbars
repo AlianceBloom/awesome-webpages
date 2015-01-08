@@ -5,7 +5,16 @@ section.project-list
   ul
     li
       div.info
-        a.primary.gamewin href="http://gamew.in/"
+        a.primary.cover-backgrounds.your-project href="mailto:edgars@meinarts.name"
+          h2
+            span Your project
+          h4 ?
+          h5 Front-end or back-end
+        div.additional.closed
+
+    li
+      div.info
+        a.primary.cover-backgrounds.gamewin href="http://gamew.in/"
           h2
             span
               | Gamew.in
@@ -15,7 +24,7 @@ section.project-list
 
     li
       div.info
-        a.primary.family-app href="http://family-app.co"
+        a.primary.cover-backgrounds.family-app href="http://family-app.co"
           h2
             span
               | FamilyApp
@@ -25,7 +34,7 @@ section.project-list
 
     li
       div.info
-        a.primary.challenge4u href="http://challengefor.me/"
+        a.primary.cover-backgrounds.challenge4u href="http://challengefor.me/"
           h2
             span
               | ChallengeForYou
@@ -35,7 +44,7 @@ section.project-list
 
     li
       div.info
-        a.primary.cards-ivi-lv href="http://cards.ivi.lv"
+        a.primary.cover-backgrounds.cards-ivi-lv href="http://cards.ivi.lv"
           h2
             span
               | WinterCards

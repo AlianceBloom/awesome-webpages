@@ -1,0 +1,15 @@
+header
+  h1 Skills
+  hr
+section.skills
+  ul
+    li
+
+footer
+  hr
+  a.contacts href="mailto:edgars@meinarts.name" Edgar Meinart, LV
+  a.github href="https://github.com/AlianceBloom/awesome-webpages"
+    i.fa.fa-github
+
+
+  div.clearfix

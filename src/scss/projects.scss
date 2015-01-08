@@ -21,6 +21,7 @@ footer {
 }
 
 .project-list {
+
   font-family: 'Lato', sans-serif;
   text-align: center;
   margin-top: 60px;
@@ -46,18 +47,22 @@ footer {
 
       > .info {
         position: relative;
+
         .primary {
+
           display: block;
           position: relative;
           min-height: 200px;
           border: 1px solid black;
           overflow: hidden;
+
           &:hover {
             &::before { opacity: 0; }
             > h2, h4, h5 {
               @include transform(translate3d(0, 70px, 0));
             }
           }
+
           &::before {
             top: 0; left: 0;
             z-index: 1;
@@ -68,22 +73,6 @@ footer {
             opacity: 0.9;
             @include transition(opacity .4s ease-in 0s);
           }
-          &.gamewin {
-            background: url(../img/projects/gamewin.png) no-repeat no-repeat;
-            background-size: cover;
-          }
-          &.cards-ivi-lv {
-            background: url(../img/projects/cards_ivi_lv.png) no-repeat no-repeat;
-            background-size: cover;
-          }
-          &.family-app {
-            background: url(../img/projects/family_app.png) no-repeat no-repeat;
-            background-size: cover;
-          }
-          &.challenge4u {
-            background: url(../img/projects/challenge4u.png) no-repeat no-repeat;
-            background-size: cover;
-          }
           > h2 {
             text-align: center;
             margin-top: 140px;
@@ -91,24 +80,53 @@ footer {
             text-transform: uppercase;
           }
           > h4 {
-            font-weight: 200;
             text-transform: lowercase;
           }
           > h5 {
-            font-weight: 200;
             font-size: 13px;
             padding-top: 5px;
             text-transform: uppercase;
           }
           > h2, h4, h5 {
+            font-weight: 200;
             @include transition-property(transform);
             @include transition-duration(0.4s);
             position: relative;
             z-index: 2;
             color: white;
           }
+
         }
+
       }
+
     }
+
   }
+
+}
+
+.cover-backgrounds {
+
+  &.gamewin {
+    background: url(../img/projects/gamewin.png) no-repeat no-repeat;
+    background-size: cover;
+  }
+  &.cards-ivi-lv {
+    background: url(../img/projects/cards_ivi_lv.png) no-repeat no-repeat;
+    background-size: cover;
+  }
+  &.family-app {
+    background: url(../img/projects/family_app.png) no-repeat no-repeat;
+    background-size: cover;
+  }
+  &.challenge4u {
+    background: url(../img/projects/challenge4u.png) no-repeat no-repeat;
+    background-size: cover;
+  }
+  &.your-project {
+    background: url(../img/projects/your_project.png) no-repeat no-repeat;
+    background-size: cover;
+  }
+
 }

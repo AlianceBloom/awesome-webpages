@@ -32,7 +32,7 @@ window.GlobalView = (function(_super) {
         $('#open_button').removeClass('close').data('offcavnas-action', 'open');
         $(this.el).removeClass('show-menu');
     }
-    return e.preventDefault();
+    return false;
   };
 
   return GlobalView;

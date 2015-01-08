@@ -78,32 +78,19 @@ footer {
             -webkit-transition: opacity 0.4s ease-in 0s;
             -moz-transition: opacity 0.4s ease-in 0s;
             transition: opacity 0.4s ease-in 0s; }
-          .project-list > ul > li > .info .primary.gamewin {
-            background: url(../img/projects/gamewin.png) no-repeat no-repeat;
-            background-size: cover; }
-          .project-list > ul > li > .info .primary.cards-ivi-lv {
-            background: url(../img/projects/cards_ivi_lv.png) no-repeat no-repeat;
-            background-size: cover; }
-          .project-list > ul > li > .info .primary.family-app {
-            background: url(../img/projects/family_app.png) no-repeat no-repeat;
-            background-size: cover; }
-          .project-list > ul > li > .info .primary.challenge4u {
-            background: url(../img/projects/challenge4u.png) no-repeat no-repeat;
-            background-size: cover; }
           .project-list > ul > li > .info .primary > h2 {
             text-align: center;
             margin-top: 140px;
             font-size: 20px;
             text-transform: uppercase; }
           .project-list > ul > li > .info .primary > h4 {
-            font-weight: 200;
             text-transform: lowercase; }
           .project-list > ul > li > .info .primary > h5 {
-            font-weight: 200;
             font-size: 13px;
             padding-top: 5px;
             text-transform: uppercase; }
           .project-list > ul > li > .info .primary > h2, .project-list > ul > li > .info .primary h4, .project-list > ul > li > .info .primary h5 {
+            font-weight: 200;
             -webkit-transition-property: -webkit-transform;
             -moz-transition-property: -moz-transform;
             transition-property: transform;
@@ -113,3 +100,19 @@ footer {
             position: relative;
             z-index: 2;
             color: white; }
+
+.cover-backgrounds.gamewin {
+  background: url(../img/projects/gamewin.png) no-repeat no-repeat;
+  background-size: cover; }
+.cover-backgrounds.cards-ivi-lv {
+  background: url(../img/projects/cards_ivi_lv.png) no-repeat no-repeat;
+  background-size: cover; }
+.cover-backgrounds.family-app {
+  background: url(../img/projects/family_app.png) no-repeat no-repeat;
+  background-size: cover; }
+.cover-backgrounds.challenge4u {
+  background: url(../img/projects/challenge4u.png) no-repeat no-repeat;
+  background-size: cover; }
+.cover-backgrounds.your-project {
+  background: url(../img/projects/your_project.png) no-repeat no-repeat;
+  background-size: cover; }

@@ -11,7 +11,8 @@ window.GlobalRoute = (function(_super) {
   GlobalRoute.prototype.routes = {
     '': 'index',
     'home': 'index',
-    'portfolio': 'portfolio'
+    'portfolio': 'portfolio',
+    'skills': 'skills'
   };
 
   GlobalRoute.prototype.initialize = function() {
@@ -25,7 +26,8 @@ window.GlobalRoute = (function(_super) {
   };
 
   GlobalRoute.prototype.portfolio = function() {
-    return $('#content').html(AwesomeWebpage.templates.portfolio());
+    $('#content').html(AwesomeWebpage.templates.portfolio());
+    return $('#content').html(AwesomeWebpage.templates.skills());
   };
 
   return GlobalRoute;
