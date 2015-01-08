@@ -302,6 +302,7 @@ footer {
       .project-list > ul > li > .info {
         position: relative; }
         .project-list > ul > li > .info .primary {
+          text-decoration: none;
           display: block;
           position: relative;
           min-height: 200px;
@@ -366,6 +367,48 @@ footer {
 .cover-backgrounds.your-project {
   background: url(../img/projects/your_project.png) no-repeat no-repeat;
   background-size: cover; }
+
+.skills {
+  width: 90%;
+  margin: 0 auto 0 auto; }
+  .skills > ul {
+    width: 90%;
+    margin: 0 auto 40px auto; }
+    .skills > ul li {
+      margin-bottom: 50px;
+      display: inline-block;
+      width: 100%; }
+      .skills > ul li.divider hr {
+        border: 0;
+        width: 100%;
+        height: 1px;
+        background-color: black; }
+      .skills > ul li > .title {
+        font-size: 25px;
+        font-weight: 200;
+        text-transform: uppercase; }
+      .skills > ul li > .skill {
+        height: 100px;
+        position: relative;
+        border: 1px solid black;
+        text-align: center; }
+        .skills > ul li > .skill > .bar {
+          z-index: 0;
+          left: 0;
+          top: 0;
+          -webkit-transition: width 2.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+          -moz-transition: width 2.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+          transition: width 2.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+          width: 20%;
+          height: 100%;
+          position: absolute;
+          background-color: black; }
+          .skills > ul li > .skill > .bar > span {
+            position: relative;
+            z-index: 1;
+            color: white;
+            font-size: 40px;
+            line-height: 100px; }
 
 @media (max-width: 650px) {
   .show-menu .content-wrap {

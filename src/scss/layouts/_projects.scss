@@ -3,7 +3,7 @@
 .project-list {
 
   font-family: 'Lato', sans-serif;
-  text-align: center;
+  text-align: center; // REFACT
   margin-top: 60px;
 
   > ul {
@@ -29,6 +29,7 @@
         position: relative;
 
         .primary {
+          text-decoration: none;
 
           display: block;
           position: relative;

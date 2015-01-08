@@ -26,8 +26,18 @@ window.GlobalRoute = (function(_super) {
   };
 
   GlobalRoute.prototype.portfolio = function() {
-    $('#content').html(AwesomeWebpage.templates.portfolio());
-    return $('#content').html(AwesomeWebpage.templates.skills());
+    return $('#content').html(AwesomeWebpage.templates.portfolio());
+  };
+
+  GlobalRoute.prototype.skills = function() {
+    $('#content').html(AwesomeWebpage.templates.skills());
+    return setTimeout(function() {
+      return $.each($('li[data-procents]'), function(index, element) {
+        return $(element).find('div.bar').css({
+          width: $(element).data('procents')
+        });
+      });
+    }, 100);
   };
 
   return GlobalRoute;
