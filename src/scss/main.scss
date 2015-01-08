@@ -50,9 +50,6 @@ button {
 .menu-button {
   opacity: 0.5;
   @include transition(opacity .4s ease-in 0s);
-  // @include transform(translate3d(20px, 20px, 0));
-  // @include transition-property(transform);
-  // @include transition-duration(0.3s);
 
   z-index: 1000;
   text-align: center;

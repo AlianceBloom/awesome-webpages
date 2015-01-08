@@ -15,7 +15,7 @@ window.GlobalRoute = (function(_super) {
   };
 
   GlobalRoute.prototype.initialize = function() {
-    return this.navigate('home', {
+    return this.navigate('portfolio', {
       trigger: true
     });
   };

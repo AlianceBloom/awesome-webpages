@@ -1,22 +1,68 @@
+header {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 90%;
+  font-weight: 200;
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase; }
+  header h1 {
+    margin-top: 20px; }
+  header hr {
+    height: 1px;
+    border: 0;
+    background-color: gray; }
+
+footer {
+  margin: 0 auto 10px auto;
+  width: 90%;
+  font-weight: 200; }
+  footer hr {
+    height: 1px;
+    border: 0;
+    background-color: gray; }
+  footer a.contacts {
+    color: black;
+    text-decoration: inherit;
+    margin-left: 5%;
+    float: left; }
+  footer a.github {
+    color: black;
+    text-decoration: inherit;
+    margin-right: 5%;
+    float: right;
+    font-size: 25px; }
+
 .project-list {
-  font-family: 'Lato', sans-serif; }
-  .project-list > ul > li {
-    float: left;
-    margin: 1em 0 0 calc(100% / 8);
-    width: calc(100% / 6);
-    min-width: 100px; }
-    .project-list > ul > li > a {
-      display: block; }
-      .project-list > ul > li > a img {
-        width: 100%;
-        height: auto; }
-    .project-list > ul > li > h2, .project-list > ul > li h3 {
-      text-align: center; }
-    .project-list > ul > li > p {
-      text-align: center; }
-    .project-list > ul > li > hr {
-      display: none;
-      border: 0;
-      height: 1px; }
-    .project-list > ul > li.hidden > h2 i {
-      background-color: black; }
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-top: 60px; }
+  .project-list > ul {
+    width: 90%;
+    display: inline-block;
+    margin-top: -20px;
+    margin-bottom: 40px; }
+    .project-list > ul > li {
+      float: left;
+      width: 40%;
+      margin: 20px 5% 0 5%; }
+      .project-list > ul > li.hidden > .info h2 span {
+        background-color: black; }
+      .project-list > ul > li > .info {
+        position: relative; }
+        .project-list > ul > li > .info .primary {
+          min-height: 200px;
+          border: 1px solid black; }
+          .project-list > ul > li > .info .primary > h2 {
+            text-align: center;
+            margin-top: 140px;
+            font-size: 20px;
+            text-transform: uppercase; }
+          .project-list > ul > li > .info .primary > h4 {
+            font-weight: 200;
+            text-transform: lowercase; }
+          .project-list > ul > li > .info .primary > h5 {
+            font-weight: 200;
+            font-size: 13px;
+            padding-top: 5px;
+            text-transform: uppercase; }

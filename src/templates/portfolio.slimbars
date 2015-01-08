@@ -1,28 +1,123 @@
+header
+  h1 Projects
+  hr
 section.project-list
   ul
-    li.hidden
+    li
+      div.info
+        div.primary
+          h2
+            span
+              | Gamew.in
+          h4 Project for Garage48 2013
+          h5 Front-end, back-end
+        div.additional.closed
 
-      a href="#"
-        img src="img/projects/hidden.svg"
-      h2
-        i
-          | *****
-      h3
-        | Back-end developend
-      p.tags
-        a href="#"
-          | #Commercial
-      hr
+    li
+      div.info
+        div.primary
+          h2
+            span
+              | FamilyApp
+          h4 Project for StartupWeekend Riga 2014
+          h5 Front-end, back-end
+        div.additional.closed
+
+    li
+      div.info
+        div.primary
+          h2
+            span
+              | ChallengeForYou
+          h4 Project for Garage48 2014
+          h5 Front-end, back-end
+        div.additional.closed
+
+    li
+      div.info
+        div.primary
+          h2
+            span
+              | WinterCards
+          h4 Project for Dmitri Maslakov
+          h5 Front-end, back-end
+        div.additional.closed
 
     li.hidden
-      a href="#"
-        img src="img/projects/hidden.svg"
-      h2
-        i
-          | *****
-      h3
-        | Back-end developend
-      p.tags
-        a href="#"
-          | #Commercial
-      hr
+      div.info
+        div.primary
+          h2
+            span
+              | "*****"
+          h4 Commercial
+          h5 Front-end, back-end
+        div.additional.closed
+
+    li.hidden
+      div.info
+        div.primary
+          h2
+            span
+              | "*****"
+          h4 Commercial
+          h5 Front-end, back-end
+        div.additional.closed
+
+    li.hidden
+      div.info
+        div.primary
+          h2
+            span
+              | "*****"
+          h4 Commercial
+          h5 Front-end, back-end
+        div.additional.closed
+
+    li.hidden
+      div.info
+        div.primary
+          h2
+            span
+              | "*****"
+          h4 Commercial
+          h5 Front-end, back-end
+        div.additional.closed
+
+    li.hidden
+      div.info
+        div.primary
+          h2
+            span
+              | "*****"
+          h4 Commercial
+          h5 Front-end, back-end
+        div.additional.closed
+
+    li.hidden
+      div.info
+        div.primary
+          h2
+            span
+              | "*****"
+          h4 Commercial
+          h5 Front-end, back-end
+        div.additional.closed
+
+    li.hidden
+      div.info
+        div.primary
+          h2
+            span
+              | "*****"
+          h4 Commercial
+          h5 Front-end, back-end
+        div.additional.closed
+
+footer
+  hr
+  a.contacts href="mailto:edgars@meinarts.name" Edgar Meinart, LV
+  a.github href="https://github.com/AlianceBloom/awesome-webpages"
+    i.fa.fa-github
+
+
+  div.clearfix

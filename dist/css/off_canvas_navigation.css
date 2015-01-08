@@ -37,7 +37,6 @@ html, body, .container, .content-wrap {
   z-index: 1001;
   width: 100%;
   max-width: 15%;
-  min-width: 140px;
   height: 100%;
   color: #373a47;
   -webkit-transform: translate3d(-100%, 0, 0);
