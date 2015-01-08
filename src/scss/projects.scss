@@ -1,23 +1,23 @@
 @import "bourbon";
 
 header {
-	margin: 0 auto 0 auto;
-	text-align: center;
-	width: 90%;
-	font-weight: 200;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 90%;
+  font-weight: 200;
   font-family: 'Lato', sans-serif;
-	font-size: 40px;
-	text-transform: uppercase;
-	h1 { margin-top: 20px; }
-	hr { height: 1px; border: 0; background-color: gray; }
+  font-size: 40px;
+  text-transform: uppercase;
+  h1 { margin-top: 20px; }
+  hr { height: 1px; border: 0; background-color: gray; }
 }
 footer {
-	margin: 0 auto 10px auto;
-	width: 90%;
-	font-weight: 200;
-	hr { height: 1px; border: 0; background-color: gray; }
-	a.contacts { color: black; text-decoration: inherit; margin-left: 5%; float: left; }
-	a.github { color: black; text-decoration: inherit; margin-right: 5%; float: right;  font-size: 25px; }
+  margin: 0 auto 10px auto;
+  width: 90%;
+  font-weight: 200;
+  hr { height: 1px; border: 0; background-color: gray; }
+  a.contacts { color: black; text-decoration: inherit; margin-left: 5%; float: left; }
+  a.github { color: black; text-decoration: inherit; margin-right: 5%; float: right;  font-size: 25px; }
 }
 
 .project-list {
@@ -25,47 +25,90 @@ footer {
   text-align: center;
   margin-top: 60px;
 
-	> ul {
-		width: 90%;
-		display: inline-block;
-		margin-top: -20px;
-		margin-bottom: 40px;
-		> li {
-			float: left;
-			width: 40%;
-			margin: 20px 5% 0 5%;
+  > ul {
+    width: 90%;
+    display: inline-block;
+    margin-top: -20px;
+    margin-bottom: 40px;
 
-			&.hidden {
-				> .info {
-					h2 {
-						span { background-color: black; }
-					}
-				}
-			}
+    > li {
+      float: left;
+      width: 40%;
+      margin: 20px 5% 0 5%;
 
-			> .info {
-				position: relative;
-				.primary {
-					min-height: 200px;
-					border: 1px solid black;
-					> h2 {
-						text-align: center;
-						margin-top: 140px;
-						font-size: 20px;
-						text-transform: uppercase;
-					}
-					> h4 {
-						font-weight: 200;
-						text-transform: lowercase;
-					}
-					> h5 {
-						font-weight: 200;
-						font-size: 13px;
-						padding-top: 5px;
-						text-transform: uppercase;
-					}
-				}
-			}
-		}
-	}
+      &.hidden {
+        > .info {
+          h2 {
+            span { background-color: black; color: black; }
+          }
+        }
+      }
+
+      > .info {
+        position: relative;
+        .primary {
+          display: block;
+          position: relative;
+          min-height: 200px;
+          border: 1px solid black;
+          overflow: hidden;
+          &:hover {
+            &::before { opacity: 0; }
+            > h2, h4, h5 {
+              @include transform(translate3d(0, 70px, 0));
+            }
+          }
+          &::before {
+            top: 0; left: 0;
+            z-index: 1;
+            position: absolute;
+            width: 100%; height: 100%;
+            content: '';
+            background: black;
+            opacity: 0.9;
+            @include transition(opacity .4s ease-in 0s);
+          }
+          &.gamewin {
+            background: url(../img/projects/gamewin.png) no-repeat no-repeat;
+            background-size: cover;
+          }
+          &.cards-ivi-lv {
+            background: url(../img/projects/cards_ivi_lv.png) no-repeat no-repeat;
+            background-size: cover;
+          }
+          &.family-app {
+            background: url(../img/projects/family_app.png) no-repeat no-repeat;
+            background-size: cover;
+          }
+          &.challenge4u {
+            background: url(../img/projects/challenge4u.png) no-repeat no-repeat;
+            background-size: cover;
+          }
+          > h2 {
+            text-align: center;
+            margin-top: 140px;
+            font-size: 20px;
+            text-transform: uppercase;
+          }
+          > h4 {
+            font-weight: 200;
+            text-transform: lowercase;
+          }
+          > h5 {
+            font-weight: 200;
+            font-size: 13px;
+            padding-top: 5px;
+            text-transform: uppercase;
+          }
+          > h2, h4, h5 {
+            @include transition-property(transform);
+            @include transition-duration(0.4s);
+            position: relative;
+            z-index: 2;
+            color: white;
+          }
+        }
+      }
+    }
+  }
 }

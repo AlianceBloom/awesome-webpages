@@ -47,12 +47,49 @@ footer {
       width: 40%;
       margin: 20px 5% 0 5%; }
       .project-list > ul > li.hidden > .info h2 span {
-        background-color: black; }
+        background-color: black;
+        color: black; }
       .project-list > ul > li > .info {
         position: relative; }
         .project-list > ul > li > .info .primary {
+          display: block;
+          position: relative;
           min-height: 200px;
-          border: 1px solid black; }
+          border: 1px solid black;
+          overflow: hidden; }
+          .project-list > ul > li > .info .primary:hover::before {
+            opacity: 0; }
+          .project-list > ul > li > .info .primary:hover > h2, .project-list > ul > li > .info .primary:hover h4, .project-list > ul > li > .info .primary:hover h5 {
+            -webkit-transform: translate3d(0, 70px, 0);
+            -moz-transform: translate3d(0, 70px, 0);
+            -ms-transform: translate3d(0, 70px, 0);
+            -o-transform: translate3d(0, 70px, 0);
+            transform: translate3d(0, 70px, 0); }
+          .project-list > ul > li > .info .primary::before {
+            top: 0;
+            left: 0;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: black;
+            opacity: 0.9;
+            -webkit-transition: opacity 0.4s ease-in 0s;
+            -moz-transition: opacity 0.4s ease-in 0s;
+            transition: opacity 0.4s ease-in 0s; }
+          .project-list > ul > li > .info .primary.gamewin {
+            background: url(../img/projects/gamewin.png) no-repeat no-repeat;
+            background-size: cover; }
+          .project-list > ul > li > .info .primary.cards-ivi-lv {
+            background: url(../img/projects/cards_ivi_lv.png) no-repeat no-repeat;
+            background-size: cover; }
+          .project-list > ul > li > .info .primary.family-app {
+            background: url(../img/projects/family_app.png) no-repeat no-repeat;
+            background-size: cover; }
+          .project-list > ul > li > .info .primary.challenge4u {
+            background: url(../img/projects/challenge4u.png) no-repeat no-repeat;
+            background-size: cover; }
           .project-list > ul > li > .info .primary > h2 {
             text-align: center;
             margin-top: 140px;
@@ -66,3 +103,13 @@ footer {
             font-size: 13px;
             padding-top: 5px;
             text-transform: uppercase; }
+          .project-list > ul > li > .info .primary > h2, .project-list > ul > li > .info .primary h4, .project-list > ul > li > .info .primary h5 {
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.4s;
+            -moz-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            position: relative;
+            z-index: 2;
+            color: white; }

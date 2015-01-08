@@ -5,7 +5,7 @@ section.project-list
   ul
     li
       div.info
-        div.primary
+        a.primary.gamewin href="#"
           h2
             span
               | Gamew.in
@@ -15,7 +15,7 @@ section.project-list
 
     li
       div.info
-        div.primary
+        a.primary.family-app href="#"
           h2
             span
               | FamilyApp
@@ -25,7 +25,7 @@ section.project-list
 
     li
       div.info
-        div.primary
+        a.primary.challenge4u href="#"
           h2
             span
               | ChallengeForYou
@@ -35,7 +35,7 @@ section.project-list
 
     li
       div.info
-        div.primary
+        a.primary.cards-ivi-lv href="#"
           h2
             span
               | WinterCards
