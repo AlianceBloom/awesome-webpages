@@ -23,24 +23,22 @@ html
     .container
       .menu-wrap
         nav.menu
-          .icon-list
+          .menu-item-list
             a href="#home"
-              / i.fa.fa-home
               span Home
             a href="#portfolio"
-              / i.fa.fa-folder
               span Portfolio
             a href="#skills"
-              / i.fa.fa-star
               span Skills
 
-        a.close-button#close_button href="#" data-offcavnas-action="close"
-          | HIDE MENU
-
-      button.menu-button#open_button data-offcavnas-action="open"
-        | Open Menu
-
       .content-wrap#content_wrap data-offcavnas-action="close"
+        a.menu-button#open_button href="#" data-offcavnas-action="open"
+          div
+            .open
+              i.fa.fa-bars
+            .close
+              i.fa.fa-close
+
         .content#content
 
 

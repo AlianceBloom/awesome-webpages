@@ -21,14 +21,15 @@ window.GlobalView = (function(_super) {
   GlobalView.prototype.initialize = function() {};
 
   GlobalView.prototype.toggle_off_canvas = function(event) {
-    var target;
-    target = $(event.target);
-    console.log(target);
-    switch (target.data('offcavnas-action')) {
+    var $target;
+    $target = $(event.target).data('offcavnas-action') ? $(event.target) : $(event.target).parents('[data-offcavnas-action]');
+    switch ($target.data('offcavnas-action')) {
       case 'open':
+        $('#open_button').addClass('close').data('offcavnas-action', 'close');
         $(this.el).addClass('show-menu');
         break;
       case 'close':
+        $('#open_button').removeClass('close').data('offcavnas-action', 'open');
         $(this.el).removeClass('show-menu');
     }
     return false;

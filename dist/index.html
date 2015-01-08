@@ -20,14 +20,22 @@
     <div class="container">
       <div class="menu-wrap">
         <nav class="menu">
-          <div class="icon-list">
+          <div class="menu-item-list">
             <a href="#home"><span>Home</span></a><a href="#portfolio"><span>Portfolio</span></a><a href="#skills"><span>Skills</span></a>
           </div>
         </nav>
-        <a class="close-button" data-offcavnas-action="close" href="#" id="close_button">HIDE MENU</a>
       </div>
-      <button class="menu-button" data-offcavnas-action="open" id="open_button">Open Menu</button>
       <div class="content-wrap" data-offcavnas-action="close" id="content_wrap">
+        <a class="menu-button" data-offcavnas-action="open" href="#" id="open_button">
+          <div>
+            <div class="open">
+              <i class="fa fa-bars"></i>
+            </div>
+            <div class="close">
+              <i class="fa fa-close"></i>
+            </div>
+          </div>
+        </a>
         <div class="content" id="content"></div>
       </div>
     </div>

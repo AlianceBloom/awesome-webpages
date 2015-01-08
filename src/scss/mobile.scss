@@ -1,10 +1,17 @@
 @import "bourbon";
+@import "helpers/variables";
 
 
 @media (max-width: 650px) {
 
+  .show-menu {
+    .content-wrap {
+      @include transform(translate3d($menu_mobile_size, 0, 0));
+    }
+  }
+
   .menu-wrap {
-    max-width: 100%;
+    max-width: 240px;
     .icon-list {
       a {
         text-align: center;

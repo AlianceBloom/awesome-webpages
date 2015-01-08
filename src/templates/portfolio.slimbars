@@ -1,6 +1,7 @@
 section.project-list
   ul
     li.hidden
+
       a href="#"
         img src="img/projects/hidden.svg"
       h2
