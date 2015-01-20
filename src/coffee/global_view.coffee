@@ -19,4 +19,4 @@ class window.GlobalView extends Backbone.View
         $('#open_button').removeClass('close').data('offcavnas-action', 'open')
         $(@el).removeClass('show-menu')
 
-    return false;
+    event.prevendDefault()

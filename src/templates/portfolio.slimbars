@@ -5,11 +5,11 @@ section.project-list
   ul
     li
       div.info
-        a.primary.cover-backgrounds.your-project href="mailto:edgars@meinarts.name"
+        a.primary.cover-backgrounds.kapchonka href="http://kapchonka.meinart.ninja"
           h2
-            span Your project
-          h4 ?
-          h5 Front-end or back-end
+            span Kapchonka gem preview
+          h4 -
+          h5 Front-end, back-end
         div.additional.closed
 
     li

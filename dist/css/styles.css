@@ -355,6 +355,9 @@ footer {
 .cover-backgrounds.gamewin {
   background: url(../img/projects/gamewin.png) no-repeat no-repeat;
   background-size: cover; }
+.cover-backgrounds.kapchonka {
+  background: url(../img/projects/kapchonka.png) no-repeat no-repeat;
+  background-size: cover; }
 .cover-backgrounds.cards-ivi-lv {
   background: url(../img/projects/cards_ivi_lv.png) no-repeat no-repeat;
   background-size: cover; }
